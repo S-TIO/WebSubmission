@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    font-size: 25px;
+    padding: 120px;
+    background-color: #222831;
+    background-image: url("../image/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #FF7700;
+}
+
+.navbar {
+    background-color: #393E46;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #FF7700;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active {
+    background-color: #103975;
+    color: #FF7700;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbutton {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #FF7700;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar a:hover, .dropdown:hover .dropbutton {
+    background-color: #292D33;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #DDDDDD;
+    color: #0AA1DD;
+}
+
+.show {
+    display: block;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+header {
+    display: inline;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #BBBBBB;
+    padding: 20px;
+    overflow: auto;
+}
+
+h2 {
+    color: #FF7700
+}
+
+h3 {
+    color: #FF7700
+}
+
+footer {
+    padding: 10px;
+    color: #FF7700;
+    background-color: #222831;
+    text-align: center;
+    font-weight: bold;
+}
+
+table, tr, th, td {
+    border: 1px solid;
+}
+
+.protagonis table {
+    float: left;
+    margin-right: 20px;
+}
+
+.protagonis table {
+    min-width: 300px;
+    max-width: 300px;
+    max-height: auto;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.protagonis {
+    overflow: auto;
+}
+
+.featured-image {
+    width: 200px;
+    align-items: center;
+    max-height: auto;
+    padding: 10px;
+    object-fit: cover;
+    object-position: center;
+    float: left;
+}
+
+.table-image {
+    width: 200px;
+    align-items: center;
+    max-height: auto;
+    padding: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    .navbar a:not(:first-child), .dropdown .dropbutton {
+        display: none;
+      }
+      .navbar a.icon {
+        float: right;
+        display: block;
+    }
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar.responsive .dropdown {
+        float: none;
+    }
+    .navbar.responsive .dropdown-content {
+        position: relative;
+    }
+    .navbar.responsive .dropdown .dropbutton {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    .dropdown-content {
+        max-height: 140px;
+    }
+}
